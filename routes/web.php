@@ -19,5 +19,3 @@ Route::post('/tambahbukutamu', [BukutamuEntryController::class, 'store']);
 Route::get('/admin', [BukutamuEntryController::class, 'admin']);
 Route::get('/adminfilter', [BukutamuEntryController::class,'filteradmin']);
 
-// Rute untuk export CSV
-Route::get('/admin/export', [BukutamuEntryController::class, 'export']);
