@@ -1,4 +1,7 @@
-1. buat database mysql 
+1. rename .enc.example menjadi ".env"
+   
+2. ubah isi .env pafa bagian database sesuai yang anda mau
+    mysql :
     DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
     DB_PORT=3306
@@ -6,7 +9,7 @@
     DB_USERNAME=root
     DB_PASSWORD=
 
-    postgres    
+    postgres :
     DB_CONNECTION=pgsql
     DB_HOST=127.0.0.1
     DB_PORT=5432
@@ -14,8 +17,11 @@
     DB_USERNAME=root
     DB_PASSWORD=
 
-2. jalankan migrasi database dengan ketik di terminal 
+3. jalankan perintah generate key di terminal
+    php artisan key:generate
+   
+4. jalankan migrasi database dengan ketik di terminal 
     "php artisan migrate"
 
-3. jalankan program dengan ketik di terminal
+5. jalankan program dengan ketik di terminal
     "php artisan serve"
